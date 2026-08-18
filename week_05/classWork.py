@@ -43,7 +43,7 @@
 
 # def fn(a, b):
 #     return a + b
-# def fn(a, b, c):        # As there is no fn( overloading in Python by default so the latest fn() will run
+# def fn(a, b, c):        # As there is no fn() overloading in Python by default so the latest fn() will run
 #     return a + b + c
 
 # # fn(1,2)       # Error: 3 arguments are required???
@@ -85,3 +85,32 @@ for i in range(n):
     o_l.append(s)
 for i in o_l:
     i.show_Info()  
+
+# Properties:
+
+# class Shapes:
+#     def __init__(self, s, l):
+#         self.__sides = s 
+#         self.length = l
+
+#     @property
+#     def sides(self):
+#         return self.__sides
+#     @sides.setter
+#     def sides(self, val):
+#         self.__sides = val
+#     @property
+#     def length(self):
+#         return self._length
+#     @length.setter
+#     def length(self, val):
+#         self._length = val
+#     @property
+#     def area(self):
+#         return self._length * 2
+    
+# side = int(input(f"Sides: "))
+# length = int(input(f"Length : "))
+# s = Shapes(side, length)
+# print(s.sides)
+# print(s.length)
